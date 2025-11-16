@@ -1,0 +1,340 @@
+#our_team {
+  padding: 50px 0;
+  background-color: #f7f7f7;
+}
+
+.team_line {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.team_line_item {
+  width: 240px;
+  height: auto;
+  background-color: #fff;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  position: relative;
+}
+
+.team_line_item:nth-child(1) {
+  border-bottom: 4px solid var(--color-red);
+}
+
+.team_line_item:nth-child(2) {
+  border-bottom: 4px solid var(--color-green);
+}
+
+.team_line_item:nth-child(3) {
+  border-bottom: 4px solid var(--color-purple);
+}
+
+.team_line_item:nth-child(4) {
+  border-bottom: 4px solid var(--color-yellow);
+}
+
+.team_line_item:nth-child(1):hover {
+  background-color: var(--color-red);
+}
+
+.team_line_item:nth-child(2):hover {
+  background-color: var(--color-green);
+}
+
+.team_line_item:nth-child(3):hover {
+  background-color: var(--color-purple);
+}
+
+.team_line_item:nth-child(4):hover {
+  background-color: var(--color-yellow);
+}
+
+.team_line_item_image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 9 / 10;
+  position: relative;
+}
+
+.team_line_item_image img {
+  width: 100%;
+  height: 100%;
+}
+
+.team_line_item_image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 4px);
+}
+
+.team_line_item:nth-child(1) .team_line_item_image::before {
+  background-image: linear-gradient(transparent 70%, var(--color-red-b)), radial-gradient(transparent, #0005);
+}
+
+.team_line_item:nth-child(2) .team_line_item_image::before {
+  background-image: linear-gradient(transparent 70%, var(--color-green-b)), radial-gradient(transparent, #0005);
+}
+
+.team_line_item:nth-child(3) .team_line_item_image::before {
+  background-image: linear-gradient(transparent 70%, var(--color-purple-b)), radial-gradient(transparent, #0005);
+}
+
+.team_line_item:nth-child(4) .team_line_item_image::before {
+  background-image: linear-gradient(transparent 70%, var(--color-yellow-b)), radial-gradient(transparent, #0005);
+}
+
+.team_line_item_text {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.team_line_item_text h4,
+.team_line_item_text p {
+  margin: 5px 0;
+}
+
+.team_line_item:nth-child(1) h4 {
+  color: var(--color-red);
+  transition: 0.5s;
+}
+
+.team_line_item:nth-child(2) h4 {
+  color: var(--color-green);
+  transition: 0.5s;
+}
+
+.team_line_item:nth-child(3) h4 {
+  color: var(--color-purple);
+  transition: 0.5s;
+}
+
+.team_line_item:nth-child(4) h4 {
+  color: var(--color-yellow);
+  transition: 0.5s;
+}
+
+.team_line_item p {
+  color: #000000;
+  transition: 0.5s;
+}
+
+.team_line_item:hover h4,
+.team_line_item:hover p {
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.pointer {
+  width: 50px;
+  height: 25px;
+  background-color: #fff;
+  clip-path: polygon(50% 0%, 0 100%, 100% 100%);
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 25px);
+  opacity: 0;
+}
+
+.team_line_item:hover .pointer {
+  opacity: 1;
+}
+
+/* --------------------------slider--------------------------- */
+
+.slider {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.slider_container {
+  width: 500%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  animation: 20s move infinite linear;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0%);
+  }
+
+  15% {
+    transform: translateX(0%);
+  }
+
+  25% {
+    transform: translateX(-20%);
+  }
+
+  40% {
+    transform: translateX(-20%);
+  }
+
+  50% {
+    transform: translateX(-40%);
+  }
+
+  65% {
+    transform: translateX(-40%);
+  }
+
+  75% {
+    transform: translateX(-60%);
+  }
+
+  90% {
+    transform: translateX(-60%);
+  }
+
+  100% {
+    transform: translateX(-80%);
+  }
+}
+
+.workman_data {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  padding: 80px;
+  box-sizing: border-box;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.workman_data:first-child {
+  position: static;
+}
+
+.workman_data h3 {
+  margin: 0;
+}
+
+.data {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.data p {
+  line-height: 1.5;
+}
+
+.share {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share svg {
+  width: 35px;
+  transition: 0.35s;
+}
+
+.share svg:hover {
+  scale: 1.2;
+}
+
+.workman_data:nth-child(1) .share-icon,
+.workman_data:nth-child(5) .share-icon {
+  color: var(--color-red);
+}
+
+.workman_data:nth-child(2) .share-icon {
+  color: var(--color-green);
+}
+
+.workman_data:nth-child(3) .share-icon {
+  color: var(--color-purple);
+}
+
+.workman_data:nth-child(4) .share-icon {
+  color: var(--color-yellow);
+}
+
+.data_separator {
+  width: 1px;
+  padding: 2px;
+  background-image: linear-gradient(transparent, #0003 50%, transparent);
+}
+
+.data_social {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social_link {
+  display: block;
+  transition: 0.35s;
+}
+
+.social_link:hover {
+  scale: 1.1;
+}
+
+.social_connect {
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.social_connect {
+  transform: scale(1.1);
+}
+
+.social_image {
+  padding-right: 15px;
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+}
+
+.social_link:nth-child(1) .social_connect .social_image {
+  background-image: url(../images/Facebook_black.svg);
+}
+
+.social_link:nth-child(2) .social_connect .social_image {
+  background-image: url(../images/Twitter_black.svg);
+}
+
+.social_link:nth-child(3) .social_connect .social_image {
+  background-image: url(../images/LinkedIN_black.svg);
+}
+
+.social_link:nth-child(4) .social_connect .social_image {
+  background-image: url(../images/Instagram_black.svg);
+}
+
+.social_link:nth-child(1):hover .social_connect .social_image {
+  background-image: url(../images/Facebook.svg);
+}
+
+.social_link:nth-child(2):hover .social_connect .social_image {
+  background-image: url(../images/Twitter.svg);
+}
+
+.social_link:nth-child(3):hover .social_connect .social_image {
+  background-image: url(../images/LinkedIN.svg);
+}
+
+.social_link:nth-child(4):hover .social_connect .social_image {
+  background-image: url(../images/Instagram.svg);
+}

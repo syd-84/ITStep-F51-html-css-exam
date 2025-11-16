@@ -1,0 +1,107 @@
+main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.start_section {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/ow-many-watts-does-the-laptop-consume.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  margin: 50px 0 0 0;
+}
+
+.start_section .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.start_section h3 {
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 60px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.button {
+  width: 120px;
+  height: 20px;
+  background-color: var(--color-red);
+  margin: 0 auto;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  border-radius: 25px;
+  transition: 0.3s;
+  font-family: sans-serif;
+}
+
+.button:hover {
+  scale: 1.1;
+  transition: 0.5s;
+}
+
+.start_line_block {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.start_line_item {
+  width: 33.33%;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.start_line_item p {
+  margin: 10px 0;
+}
+
+.symbol {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+#dollar_svg,
+#clock_svg,
+#mark_svg {
+  width: 100%;
+  height: 100%;
+}
+
+#dollar_svg {
+  fill: var(--color-green);
+}
+
+#clock_svg {
+  fill: var(--color-purple);
+}
+
+#mark_svg {
+  stroke: var(--color-yellow);
+}
+
+.start_line_item:nth-child(1) {
+  color: var(--color-green);
+}
+
+.start_line_item:nth-child(2) {
+  color: var(--color-purple);
+}
+
+.start_line_item:nth-child(3) {
+  color: var(--color-yellow);
+}

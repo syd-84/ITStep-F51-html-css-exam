@@ -1,0 +1,156 @@
+#our_focus {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding-top: 50px;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
+
+.title h3 {
+  font-size: 50px;
+  font-weight: normal;
+  color: var(--color-font);
+  margin: 0;
+}
+
+.title p {
+  color: var(--color-font);
+  font-family: sans-serif;
+}
+
+.focus_line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.focus_subline {
+  width: calc(50% - 10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.focus_line_item {
+  width: calc(50% - 10px);
+  height: 350px;
+  background-color: #fff;
+  transition: 0.5s;
+  margin-bottom: 40px;
+  font-family: sans-serif;
+}
+
+.focus_subline:nth-child(1) .focus_line_item:nth-child(1) {
+  box-shadow: 0 4px 0 0 var(--color-red), 0 0 6px 0 #ddd;
+}
+
+.focus_subline:nth-child(1) .focus_line_item:nth-child(2) {
+  box-shadow: 0 4px 0 0 var(--color-green), 0 0 6px 0 #ddd;
+}
+
+.focus_subline:nth-child(2) .focus_line_item:nth-child(1) {
+  box-shadow: 0 4px 0 0 var(--color-purple), 0 0 6px 0 #ddd;
+}
+
+.focus_subline:nth-child(2) .focus_line_item:nth-child(2) {
+  box-shadow: 0 4px 0 0 var(--color-yellow), 0 0 6px 0 #ddd;
+}
+
+.focus_line_item:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.focus_subline:nth-child(1) .focus_line_item:nth-child(1):hover {
+  background-color: var(--color-red-b);
+  box-shadow: 0 4px 0 0 var(--color-red), 0 0 6px 0 #ddd;
+}
+
+.focus_subline:nth-child(1) .focus_line_item:nth-child(2):hover {
+  background-color: var(--color-green-b);
+  box-shadow: 0 4px 0 0 var(--color-green), 0 0 6px 0 #ddd;
+}
+
+.focus_subline:nth-child(2) .focus_line_item:nth-child(1):hover {
+  background-color: var(--color-purple-b);
+  box-shadow: 0 4px 0 0 var(--color-purple), 0 0 6px 0 #ddd;
+}
+
+.focus_subline:nth-child(2) .focus_line_item:nth-child(2):hover {
+  background-color: var(--color-yellow-b);
+  box-shadow: 0 4px 0 0 var(--color-yellow), 0 0 6px 0 #ddd;
+}
+
+.focus_line_image {
+  width: 60px;
+  height: 60px;
+  margin: 40px auto;
+  background-position: 50% 50%;
+  background-size: 100% 100%;
+}
+
+#letters_svg,
+#maps_svg,
+#photographs_svg,
+#devices_svg {
+  transition: 0.5s;
+}
+
+#letters_svg {
+  fill: var(--color-red);
+}
+
+#maps_svg {
+  stroke: var(--color-green);
+}
+
+#photographs_svg {
+  stroke: var(--color-purple);
+}
+
+#devices_svg {
+  stroke: var(--color-yellow);
+}
+
+.focus_line_item:hover .focus_line_image #letters_svg {
+  fill: white;
+  transition: 0.5s;
+}
+
+.focus_line_item:hover .focus_line_image #maps_svg,
+.focus_line_item:hover .focus_line_image #photographs_svg,
+.focus_line_item:hover .focus_line_image #devices_svg {
+  stroke: white;
+  transition: 0.5s;
+}
+
+.focus_line_heading h3 {
+  margin: 20px auto;
+  font-weight: normal;
+  text-align: center;
+  font-size: 25px;
+}
+
+.focus_line_text p {
+  text-align: center;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.separator {
+  width: 100%;
+  height: 5px;
+  background-color: #efd48d;
+}

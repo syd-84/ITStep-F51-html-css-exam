@@ -1,0 +1,220 @@
+@media (max-width:1300px) {
+
+  .about_us_photo_line {
+    scale: 1;
+  }
+
+}
+
+/* -------------------start page-------------------- */
+
+
+@media(max-width:600px) {
+
+  .button {
+    scale: 0.9;
+  }
+
+  .button:hover {
+    scale: 0.99;
+  }
+
+  .start_line_block {
+    width: 100%;
+  }
+
+  .symbol {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media(max-width:700px) {
+
+  /* -------------------burger menu-------------------- */
+
+  .header_menu img {
+    display: inline;
+  }
+
+  .header_menu {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+  }
+
+  .menu_list {
+    width: 120px;
+    height: auto;
+    background-color: #fff;
+    text-align: left;
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+  }
+
+  .header_menu:hover .menu_list {
+    display: block;
+  }
+
+  .header_menu a {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+  }
+
+}
+
+/* ------------------------------------------ */
+
+@media(max-width:760px) {
+  .team_line_item_text {
+    font-size: 12px;
+  }
+}
+
+/* ----------------------------------------- */
+
+
+@media(max-width:884px) {
+
+
+  .title h3 {
+    font-size: 40px;
+  }
+
+  /* ---------------------start page-------------------- */
+
+  .start_section h3 {
+    font-size: 30px;
+  }
+
+  /* ---------------------focus-------------------- */
+  .focus_line {
+    flex-direction: column;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .focus_subline {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .focus_line_item {
+    max-width: 260px;
+  }
+
+  /* -------------------------about us--------------------------- */
+
+  .about_us_photo_line {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .about_us_photo_line_item {
+    width: calc(50% - 20px);
+    height: auto;
+    aspect-ratio: 36 / 25;
+  }
+
+  /* -------------------------portfolio--------------------------- */
+
+  .portfolio_photo_block {
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .photo_block_item {
+    width: calc((100% - 20px) / 2);
+  }
+
+  /* -------------------------our team--------------------------- */
+
+  .slider,
+  .pointer {
+    display: none;
+  }
+
+  .team_line {
+    flex-wrap: wrap;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .team_line_item {
+    width: calc(50% - 10px);
+  }
+
+}
+
+
+
+
+@media(max-width:442px) {
+
+  .title h3 {
+    font-size: 30px;
+  }
+
+  .title p {
+    font-size: 12px;
+  }
+
+  /* ---------------------focus-------------------- */
+
+  .focus_subline {
+    flex-direction: column;
+  }
+
+  .focus_line_item {
+    width: 100%;
+  }
+
+  /* -------------------------about_us--------------------------- */
+
+  .about_us_photo_line {
+    padding: 0 10px 60px 10px;
+    box-sizing: border-box;
+  }
+
+  .about_us_photo_line_item {
+    width: 100%;
+  }
+
+  /* -------------------------portfolio--------------------------- */
+
+  .photo_block_item {
+    width: 100%;
+  }
+
+  /* -------------------------our team--------------------------- */
+  .photo_block_item,
+  .team_line_item {
+    width: 100%;
+  }
+
+  /* -------------------------footer--------------------------- */
+
+  footer {
+    padding: 25px 0 20px 0;
+  }
+
+  .footer_icon svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer_number {
+    font-size: 12px;
+  }
+
+  .footer_text {
+    font-size: 10px;
+  }
+
+}

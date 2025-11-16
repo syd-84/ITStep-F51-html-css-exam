@@ -1,0 +1,129 @@
+#about_us {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.about_us_heading {
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.about_us_text_font {
+  font-family: KaushanScript, sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+.about_us_text_font h3 {
+  margin-bottom: 5px;
+}
+
+.about_us_separator {
+  width: 60px;
+  height: 5px;
+  background-color: #d88c90;
+  margin: 30px auto;
+}
+
+.about_us_content_text {
+  color: #363636;
+  width: 80%;
+  margin: 0 auto 50px auto;
+  line-height: 1.5;
+}
+
+.about_us_photo_line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 80px;
+  scale: 1.05;
+}
+
+.about_us_photo_line_item {
+  width: 380px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.about_us_photo_line_item:hover {
+  top: -5px;
+  left: -5px;
+  box-shadow: 5px 5px 0 0 #95e2d2;
+  transition: 0.5s;
+}
+
+.au_bgi,
+.au_box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-position: 50% 50%;
+  background-size: cover;
+  transition: 0.5s;
+}
+
+.au_bgi {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.about_us_photo_line_item:nth-child(1) .au_bgi {
+  background-image: url(../images/about_1.jpg);
+}
+
+.about_us_photo_line_item:nth-child(2) .au_bgi {
+  background-image: url(../images/about_2.jpg);
+}
+
+.about_us_photo_line_item:nth-child(3) .au_bgi {
+  background-image: url(../images/about_3.jpg);
+}
+
+.au_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.about_us_photo_line_item:nth-child(1) .au_box {
+  background-image: linear-gradient(#e78c89, #f9e187);
+}
+
+.about_us_photo_line_item:nth-child(2) .au_box {
+  background-image: linear-gradient(#e78c89, #f9e187);
+}
+
+.about_us_photo_line_item:nth-child(3) .au_box {
+  background-image: linear-gradient(#e78c89, #f9e187);
+}
+
+.about_us_photo_line_item:hover .au_box {
+  opacity: 0.95;
+  transition: 0.5s;
+}
+
+.au_box img {
+  height: 40px;
+}
+
+.au_box p {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 0;
+}
