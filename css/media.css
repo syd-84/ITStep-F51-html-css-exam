@@ -83,6 +83,11 @@
 
 @media(max-width:884px) {
 
+  .button_up img,
+  .button_down img {
+    width: 52px;
+  }
+
 
   .title h3 {
     font-size: 40px;
