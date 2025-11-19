@@ -6,12 +6,13 @@
 .team_line {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: var(--gap-var);
+  flex-wrap: wrap;
 }
 
 .team_line_item {
-  width: 240px;
+  width: calc((100% - 3 * var(--gap-var)) / 4);
   height: auto;
   background-color: #fff;
   padding: 5px;

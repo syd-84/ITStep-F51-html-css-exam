@@ -18,14 +18,15 @@ header .content {
   width: 10%;
   height: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logo p {
+  height: 100%;
   font-family: Look-Script, sans-serif;
   font-size: 20px;
+  margin-left: 10px;
 }
 
 header span {
@@ -33,9 +34,8 @@ header span {
 }
 
 .content nav {
-  width: 90%;
   height: 50px;
-
+  flex-grow: 1;
 }
 
 .header_menu,

@@ -9,12 +9,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: var(--gap-var);
   flex-wrap: wrap;
 }
 
 .photo_block_item {
-  width: calc((100% - 40px) / 3);
+  width: calc((100% - 2 * var(--gap-var)) / 3);
   aspect-ratio: 35 / 26;
   position: relative;
   transition: 0.35s;

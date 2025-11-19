@@ -31,20 +31,20 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 20px;
+  gap: var(--gap-var);
   padding-bottom: 80px;
 }
 
 .focus_subline {
-  width: calc(50% - 10px);
+  width: calc((100% - var(--gap-var)) / 2);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  gap: var(--gap-var);
 }
 
 .focus_line_item {
-  width: calc(50% - 10px);
+  width: calc((100% - var(--gap-var)) / 2);
   height: 350px;
   background-color: #fff;
   transition: 0.5s;

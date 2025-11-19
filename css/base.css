@@ -12,6 +12,7 @@ body {
   --color-yellow-a: #efb77e99;
   --color-yellow-b: #efb77ecc;
   --color-font: #363636;
+  --gap-var: 20px;
 }
 
 ::selection {
@@ -137,16 +138,19 @@ a {
   0% {
     z-index: 5;
     overflow: hidden;
+    opacity: 1;
   }
 
   99% {
     z-index: 5;
     overflow: hidden;
+    opacity: 1;
   }
 
   100% {
     z-index: -5;
     overflow: auto;
+    opacity: 0;
   }
 }
 
@@ -154,21 +158,21 @@ a {
 
 /* -----Scrollbar CSS ----- */
 /* Firefox */
-html {
+* {
   scrollbar-width: auto;
   scrollbar-color: #888888 #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
-html::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 16px;
 }
 
-html::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: #ffffff;
 }
 
-html::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #888888;
   border-radius: 10px;
   border: 3px solid #ffffff;
